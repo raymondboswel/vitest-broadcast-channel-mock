@@ -6,7 +6,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: 'src/index.ts',
-            name: 'Vitest broadcast channel mock',
+            formats: ['es'],
             fileName: 'index',
         },
         rollupOptions: {

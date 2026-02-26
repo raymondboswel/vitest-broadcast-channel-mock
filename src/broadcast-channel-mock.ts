@@ -32,5 +32,6 @@ export const mockBroadcastChannel = () => {
 
 export const resetMockBroadcastChannel = () => {
     mockChannels.clear();
-    vi.restoreAllMocks();
+    vi.unstubAllGlobals();
+    vi.resetAllMocks();
 }
